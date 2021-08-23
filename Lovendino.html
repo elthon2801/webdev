@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+	<title> PROFILE </title>
+	<link rel="" type="text/css" href="dito yung file name ng css document"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+<style>
+  *,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 0.875rem;
+  background-color: gray;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-center {
+  padding: 1em;
+  background: white;
+  width: 100%;
+  /*   align-items:center; */
+  /*   justify-content: space-between; */
+  width: 100%;
+  opacity: 0.6;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-header img {
+  cursor: pointer;
+  height: 50px;
+  float: left;
+  margin: 1em;
+  margin-left: 45px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  /*   height: 80vh; */
+  transition: all 1s ease-in-out;
+  height: 0;
+  overflow: hidden;
+}
+
+.show-links {
+  height: 80vh;
+  transition: all 1s ease-in-out;
+}
+.links li {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 1em 1em;
+  margin: auto;
+}
+.links li a {
+  color: #121212;
+
+  transition: 0.1s border linear;
+}
+.links li a:hover {
+  border-bottom: black 4px solid;
+}
+.social-icons {
+  display: flex;
+  height: 0vh;
+  overflow: hidden;
+}
+
+.show-icons {
+  height: 10vh;
+  align-items: center;
+  border-top: 2px solid black;
+  overflow: visible;
+}
+.social-icons li {
+  margin: auto;
+
+  font-size: 1.5rem;
+  transition: all 0.5s linear;
+}
+
+.social-icons li a {
+  padding: 0.4em;
+  color: black;
+  transition: all 0.5s ease;
+  border-radius: 50%;
+}
+
+.social-icons li a:hover {
+  background: black;
+  color: white;
+}
+
+.nav-toggle {
+  font-size: 1.5rem;
+  color: black;
+  background: transparent;
+  border-color: transparent;
+  transition: 1s all linear;
+  cursor: pointer;
+  justify-self: flex-end;
+  outline: none;
+}
+.nav-toggle:hover {
+  color: black;
+  transform: rotate(90deg);
+  outline: none;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-header {
+    display: block;
+  }
+
+  .links {
+    flex-direction: row;
+    height: auto;
+    display: flex;
+  }
+  .links li {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1em 1em;
+    margin: auto;
+  }
+  .social-icons {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    border: none;
+    padding:1em;
+  }
+
+  .social-icons li {
+    margin: auto;
+
+    font-size: 1.2rem;
+  }
+
+  .nav-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer {
+    display: none;
+  }
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-center">
+    <!-- nav header -->
+    <div class="nav-header">
+      <img src="resources\dad.png" class="logo" alt="logo" />
+      <button class="nav-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <!-- links -->
+    <ul class="links">
+      <li>
+        <a href="teamlanding.html">home</a>
+      </li>
+      <li>
+        <a href="elthon.html">Cayetano</a>
+      </li>
+      <li>
+        <a href="briangalang.html">Galang</a>
+      </li>
+      <li>
+        <a href="carlos.html">Gonzales</a>
+      </li>
+	  <li>
+        <a href="patrick.html">Pasohil</a>
+      </li>
+	  <li>
+        <a href="joan.html">Lovendino</a>
+      </li>
+	  <li>
+        <a href="ilah.html">Zamora</a>
+      </li>
+    </ul>
+    <!-- social media -->
+    <ul class="social-icons">
+      <li>
+        <a href="https://www.facebook.com/CityCollegeOfAngeles/">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.twitter.com">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+	
+	<div class="bg"> 
+		<h1>PERSONAL INFORMATION</h1> Lovendino, Joan
+		<p>20 Years old <br>
+			Email: jlovendino884@gmail.com,<br> 
+			Phone number: 09169789435</p> 
+
+		<h1>Education</h1>
+		<p>Grade 7 High School- Top 2 <br>
+			Grade 10 High school-Top 2 <br> 
+			Senior High School-With Honors</p> 
+
+		<h1></h1>
+		<p> 
+</p> 
+
+		<h1>SKILL AND TALENT</h1>
+		<p>Singing<br>
+			<br> 
+			</p> 
+
+		<img src="https://scontent.fmnl6-2.fna.fbcdn.net/v/t1.15752-9/fr/cp0/e15/q65/168443530_1420718638262919_312665465960621012_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=58c789&efg=eyJpIjoidCJ9&_nc_eui2=AeHGx6ID2T7Z6yyopQRhtwl83uVPXiLiv8Pe5U9eIuK_w9lOIokcym13MT31ZXXswGffB7KLmYXxK_JseB0FXKJQ&_nc_ohc=ZnSpc81G-gUAX9tsYR2&_nc_ht=scontent.fmnl6-2.fna&tp=14&oh=64b18a56c7649dbbf020f27237d1db76&oe=609647F8">	</div>
+
+	<div class="bg1">
+		<div>
+			<div>
+				<p> /p>
+			</div>  
+		</div>
+	</div>
+		
+
+</body> 
+</html>
