@@ -85,4 +85,37 @@ p{
 }.login .button{
 	width: 150px;
 	height: 40px;
+}.prompt{
+	height:499px;
+	width:75%;
+	margin: 140 auto;
+	padding:25px 50px 0px 50px;
+	position: absolute;
+	background-color: black;
+	transform: translate(-4.2%, -115%);
+}.prompt h1{
+	font-size: 30px;
+	margin: 20px auto ;
+
+}.prompt img{
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+}.prompt .button{
+	width: 20%;
+}.prompt p{
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: white;
+	margin: 10px 0px 1px 20%;
+	text-align: left;
+}.prompt .forminput{
+	width: 60%;
+	height: 35px;
+	margin-top: 9px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+}.prompt em{
+	font-size: 10px;
 }

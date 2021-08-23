@@ -12,6 +12,7 @@
 </head>
 <body>
 
+
 <nav>
   <div class="nav-center">
     <!-- nav header -->
@@ -24,11 +25,11 @@
     <!-- links -->
     <ul class="links">
       <li>
-        <a href="index.html">Back</a>
+        <a href="index.php">Back</a>
       </li>
       <li>
       <li>
-        <a href="home.html">Home</a>
+        <a href="home.php">Home</a>
       </li>
       <li>
         <a href="elthon.html">Cayetano</a>
@@ -69,28 +70,32 @@
   <div class="slideshow-item">
     <img src="resource/Site/first.jpg" alt="">
     <div class="slideshow-item-text">
-      <h5>Welcome To Our Page</h5>
+      <h5>Welcome To Our Page
+      <?php 
+        if(((isset($_POST["login"])) && ($_POST["name"] == "Mr.")) xor  ((isset($_POST['signup'])) && ($_POST['eMail'] == 'nelsonjanperez@cca.edu.ph'))){
+          echo "Engr. Perez</h5>"; } ?>
       <p>This page is about our personal informations. <br>It is made under the subject Web Programming 2 </p>
     </div>
   </div>
   <div class="slideshow-item">
     <img src="resource/Site/second.jpg" alt="">
     <div class="slideshow-item-text">
-      <h5>Welcome To Our Page</h5>
+      <h5>Welcome To Our Page <?php 
+        if(((isset($_POST["login"])) &&($_POST['name'] == 'Mr.')) xor  ((isset($_POST['signup'])) && ($_POST['eMail'] == 'nelsonjanperez@cca.edu.ph'))){
+          echo "Engr. Perez</h5>"; } ?>
       <p>This page is about our personal informations. <br>It is made under the subject Web Programming 2 </p>
     </div>
   </div>
   <div class="slideshow-item">
     <img src="resource/site/Capture.PNG" alt="">
     <div class="slideshow-item-text">
-      <h5>Welcome To Our Page</h5>
+      <h5>Welcome To Our Page 
+         <?php 
+        if(((isset($_POST["login"])) &&($_POST['name'] == 'Mr.')) xor  ((isset($_POST['signup'])) && ($_POST['eMail'] == 'nelsonjanperez@cca.edu.ph'))){
+          echo "Engr. Perez</h5>"; } ?>
       <p>This page is about our personal informations. <br>It is made under the subject Web Programming 2 </p>
   </div>
 </div>
 </div>
-
-
-
-
 </body>
 </html> 
