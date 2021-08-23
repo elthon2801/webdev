@@ -1,0 +1,88 @@
+body{	
+	background-size: 60%;
+    background-image: url(https://media.giphy.com/media/l1J9xRxf0x8zMnA4g/giphy.gif);
+    background-repeat: repeat;
+    width: 100%;
+    margin: 0%;
+	position: fixed;
+}
+.words{
+	background-color:black;
+	height:499px;
+	width:75%;
+	opacity: 0.95;
+	margin: 140 auto;
+	padding:25px 50px 0px 50px;
+	background-attachment:fixed;
+	text-align:center; 
+}
+h1{	
+	font-family:impact;
+	margin:auto;
+	text-align:center;
+	font-size:70;
+	color:#66fcf1;
+}
+h2{	
+	margin:-10px;
+	font-size:12px;
+	text-align:center;
+	font-family:agency fb;
+}
+.head{
+	background-color:#0b0c10;
+	color:white;
+	border-radius:100%;
+	padding:30px;
+	margin:5%;
+	text-transform: uppercase;
+}
+.head:hover{
+	background-color:#4fa7a1;
+	transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.button {	
+	margin: 0 auto;
+	width: 50%;
+	background-color:black;
+	padding:8px;
+	border: 1px solid #66fcf1;
+	font-family:helvetica;
+	font-size:20;
+	color: white;
+	text-transform: capitalize;
+}
+a{
+	color:white;
+	text-decoration:none;
+}
+.button:hover{	
+	background-color:#45a29e;
+	transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+a:hover{
+	color:white;
+}
+.divider{	
+	width: 50%;
+	background-color:#66fcf1;
+	margin: 120 auto 0 auto;
+}
+sub{	
+	color:#fff;
+	font-family:agency fb;
+	text-transform: uppercase;
+}
+p{	
+	font-size:14px;
+	margin-top:40px;
+}.login{
+	margin-top: 1%;
+}.login #e-mail, #key{
+	width: 30%;
+	height: 30px;
+	font-size: 15px;
+}.login .button{
+	width: 150px;
+	height: 40px;
+}
