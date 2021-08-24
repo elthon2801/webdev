@@ -32,22 +32,22 @@
         <a href="home.php">Home</a>
       </li>
       <li>
-        <a href="elthon.html">Cayetano</a>
+        <a href="elthon_land.html">Cayetano</a>
       </li>
       <li>
-        <a href="brian.html">Galang</a>
+        <a href="brian_land.html">Galang</a>
       </li>
       <li>
-        <a href="carlos.html">Gonzales</a>
+        <a href="carlos_land.html">Gonzales</a>
       </li>
 	  <li>
-        <a href="patrick.html">Pasohil</a>
+        <a href="patrick_land.html">Pasohil</a>
       </li>
 	  <li>
         <a href="joan.html">Lovendino</a>
       </li>
 	  <li>
-        <a href="ilah.html">Zamora</a>
+        <a href="ilah_land.html">Zamora</a>
       </li>
     </ul>
     
