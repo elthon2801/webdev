@@ -43,7 +43,7 @@
 			$photo = null;
 			for($i = 0; $i < count($emails); $i++){
 				if ($_POST["mail"] == $emails[$i]){
-					$message = "<h1>Welcome back ". $names[$i].'!'."</h1>";
+					$message = "<h1>" .$names[$i]."</h1>";
 					$name = $names[$i];
 					$photo = $photos[$i];
 					break;
@@ -59,6 +59,7 @@
 					<?php echo $message; ?>
 					<form action="home.php" method="POST">
 						<input type="hidden" name="name" value=<?php echo $name;?>>
+						<input type="hidden" name="profilepic" value=<?php echo $photo;?>>
 						<input type="submit" name="login" value="Proceed" class="button">
 					</form>
 					
@@ -78,17 +79,17 @@
 				<h1>Sign up</h1>
 				<form action="home.php" method="POST">
 					<p>Full Name</p>
-					<input type="text" name="firstName" class="forminput" placeholder="Juan dela Burgir"> 
+					<input type="text" name="name" class="forminput" placeholder="&nbsp;&nbsp;Juan dela Burgir"> 
 					<br><p>Email <em>[cca.edu.ph]</em></p>
-					<input type="email" name="eMail" class="forminput" placeholder="JuandelaBurgir@cca.edu.ph"> 
+					<input type="email" name="eMail" class="forminput" placeholder="&nbsp;&nbsp;JuandelaBurgir@cca.edu.ph"> 
 					<br><p>Role</p>
 					<select name="role" class="forminput">
-						<option value="" disabled selected hidden>select here</option>
-						<option value="Student">Student</option>
-						<option value="Teacher">Instructor</option>	
+						<option value="" disabled selected hidden>&nbsp;&nbsp;select here</option>
+						<option value="Student">&nbsp;&nbsp;Student</option>
+						<option value="Teacher">&nbsp;&nbsp;Instructor</option>	
 					</select> 
 					<br><p>Create Password</p>
-					<input type="password" name="password" class="forminput" placeholder="at leat 6 characters">
+					<input type="password" name="password" class="forminput" placeholder="&nbsp;&nbsp;at leat 6 characters">
 					<br><br><br>
 					<input type="submit" name="signup" value="Submit" class="button">
 				</form>

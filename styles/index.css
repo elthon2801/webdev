@@ -106,12 +106,12 @@ p{
 }.prompt p{
 	font-size: 15px;
 	font-family: Arial, Helvetica, sans-serif;
-	text-transform: uppercase;
+	text-transform:capitalize;
 	color: white;
-	margin: 10px 0px 1px 20%;
+	margin: 10px 0px 1px 30%;
 	text-align: left;
 }.prompt .forminput{
-	width: 60%;
+	width: 40%;
 	height: 35px;
 	margin-top: 9px;
 	font-family: Arial, Helvetica, sans-serif;

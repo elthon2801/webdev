@@ -17,7 +17,7 @@
   <div class="nav-center">
     <!-- nav header -->
     <div class="nav-header">
-      <img src="resource/Site/dad.png" class="logo" alt="logo" />
+      <img src="resource/Site/dad.png" class="logo" alt="logo" >
       <button class="nav-toggle">
         <i class="fas fa-bars"></i>
       </button>
@@ -25,11 +25,12 @@
     <!-- links -->
     <ul class="links">
       <li>
-        <a href="index.php">Back</a>
+        <a href="index.php">Logout</a>
       </li>
       <li>
-      <li>
-        <a href="home.php">Home</a>
+        <form action="home.php">
+        <a><input type="submit" value="HOME" class="homeButton"></a>
+        </form>
       </li>
       <li>
         <a href="elthon_land.html">Cayetano</a>
@@ -70,7 +71,17 @@
   <div class="slideshow-item">
     <img src="resource/Site/first.jpg" alt="">
     <div class="slideshow-item-text">
-      <h5>Welcome To Our Page
+      <h5>Welcome <?php 
+        if(((isset($_POST["login"])) && ($_POST["name"] != "Mr.")) xor  ((isset($_POST['signup'])) && ($_POST['eMail'] != 'nelsonjanperez@cca.edu.ph'))){
+          if((isset($_POST["login"])) && ($_POST["name"] != "Mr.")){
+            echo " Back<br>".$_POST['name']."!</h5>";
+          }else if((isset($_POST['signup'])) && ($_POST['eMail'] != 'nelsonjanperez@cca.edu.ph')){
+            echo "!<br></h5><h4>".$_POST['name']."</h4>";
+          }
+        }else{
+          echo " To Our Page";
+        }
+      ?>
       <?php 
         if(((isset($_POST["login"])) && ($_POST["name"] == "Mr.")) xor  ((isset($_POST['signup'])) && ($_POST['eMail'] == 'nelsonjanperez@cca.edu.ph'))){
           echo "Engr. Perez</h5>"; } ?>
@@ -80,7 +91,18 @@
   <div class="slideshow-item">
     <img src="resource/Site/second.jpg" alt="">
     <div class="slideshow-item-text">
-      <h5>Welcome To Our Page <?php 
+      <h5>Welcome <?php 
+        if(((isset($_POST["login"])) && ($_POST["name"] != "Mr.")) xor  ((isset($_POST['signup'])) && ($_POST['eMail'] != 'nelsonjanperez@cca.edu.ph'))){
+          if((isset($_POST["login"])) && ($_POST["name"] != "Mr.")){
+            echo " Back<br>".$_POST['name']."!</h5>";
+          }else if((isset($_POST['signup'])) && ($_POST['eMail'] != 'nelsonjanperez@cca.edu.ph')){
+            echo "!<br></h5><h4>".$_POST['name']."</h4>";
+          }
+        }else{
+          echo " To Our Page";
+        }
+      ?>
+      <?php
         if(((isset($_POST["login"])) &&($_POST['name'] == 'Mr.')) xor  ((isset($_POST['signup'])) && ($_POST['eMail'] == 'nelsonjanperez@cca.edu.ph'))){
           echo "Engr. Perez</h5>"; } ?>
       <p>This page is about our personal informations. <br>It is made under the subject Web Programming 2 </p>
@@ -89,8 +111,18 @@
   <div class="slideshow-item">
     <img src="resource/site/Capture.PNG" alt="">
     <div class="slideshow-item-text">
-      <h5>Welcome To Our Page 
-         <?php 
+      <h5>Welcome <?php 
+        if(((isset($_POST["login"])) && ($_POST["name"] != "Mr.")) xor  ((isset($_POST['signup'])) && ($_POST['eMail'] != 'nelsonjanperez@cca.edu.ph'))){
+          if((isset($_POST["login"])) && ($_POST["name"] != "Mr.")){
+            echo " Back<br>".$_POST['name']."!</h5>";
+          }else if((isset($_POST['signup'])) && ($_POST['eMail'] != 'nelsonjanperez@cca.edu.ph')){
+            echo "!<br></h5><h4>".$_POST['name']."</h4>";
+          }
+        }else{
+          echo " To Our Page";
+        }
+      ?>
+      <?php
         if(((isset($_POST["login"])) &&($_POST['name'] == 'Mr.')) xor  ((isset($_POST['signup'])) && ($_POST['eMail'] == 'nelsonjanperez@cca.edu.ph'))){
           echo "Engr. Perez</h5>"; } ?>
       <p>This page is about our personal informations. <br>It is made under the subject Web Programming 2 </p>

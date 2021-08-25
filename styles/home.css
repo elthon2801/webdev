@@ -20,6 +20,13 @@ a{
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
+form input{
+  border:none;
+  background: none;
+  font-size: 2rem ;
+  padding: 10px;
+  
+}
 .all{
 	 margin-top: 100px;
 	 margin-bottom: 150px;
@@ -35,7 +42,7 @@ p{
 ul{
   list-style-type: none;
 }
-a{
+a, form input{
   text-decoration: none;
   cursor: pointer;
 }
@@ -75,7 +82,7 @@ a{
   padding: 1em 1em;
   margin: auto;
 }
-.links li a{
+.links li a,input{
   color: #121212;
 
   transition: 0.1s border linear;
@@ -83,6 +90,7 @@ a{
 .links li a:hover{
   border-bottom: black 4px solid;
 }
+
 .social-icons{
   display: flex;
   height: 0vh;
@@ -126,6 +134,7 @@ a{
   transform: rotate(90deg);
   outline: none;
 }
+
 @media screen and (min-width: 800px) {
 .nav-toggle{
     display: none;
@@ -215,6 +224,12 @@ footer{
   letter-spacing:  1px;
   font-weight: 300;
   margin-top: 10%;
+}.slideshow-item h4{
+  font-size: 3rem;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  letter-spacing:  3px;
+  transform: translateY(-8%);
 }
 @keyframes cycleImages{
   25%{
