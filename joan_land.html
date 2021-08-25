@@ -3,205 +3,21 @@
 <head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+<link rel="stylesheet" href="/styles/land.css">
 <style>
-_land html{
-  font-family: "Roboto", "Arial", "sans-serif";
-  font-size: 10px;
-  color:#fff;
-}
+
 body{
   background-image: url(resource/Lovendino/joanbackground.png);
-  background-size: 100%;
-  margin: 0%;
-  position: fixed;
-  width: 100%;
-  z-index: -4;
-  color: white;
+  
 }
 .card {
-  position: relative;
-  box-shadow: 0 8px 24px 0 red;
-  max-width: 300px;
-  margin: 4% 0% 0% 10%;
-  text-align: center;
-  float: left;
-  font-family: arial;
-  font-size: 15px;
-}
-
-.title {
-  color: white;
-  font-size: 18px;
+  box-shadow: 0 8px 24px 0 #fc037f;
 }
 
 button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color:black;
-  background-color: cyan;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
+  background-color: #e703fc;
 }
 
-a {
-  text-decoration: none;
-  font-size: 18px;
-  color: white;
-}
-ul {
-  list-style-type: none;
-}
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.nav-center {
-  opacity: 0.95;
-  padding: 1em;
-  background: white;
-  width: 100%;
-  height: 50%;
-  /*   align-items:center; */
-  /*   justify-content: space-between; */
-}
-
-.nav-header {
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav-header img {
-  cursor: pointer;
-  height: 50px;
-  float: left;
-  margin: 1em;
-  margin-left: 45px;
-}
-
-.links {
-  display: flex;
-  flex-direction: column;
-  /*   height: 80vh; */
-  transition: all 1s ease-in-out;
-  height: 0;
-  overflow: hidden;
-}
-
-.show-links {
-  height: 80vh;
-  transition: all 1s ease-in-out;
-}
-.links li {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  padding: 1em 1em;
-  margin: auto;
-}
-.links li a {
-  color: #121212;
-
-  transition: 0.1s border linear;
-}
-.links li a:hover {
-  border-bottom: black 4px solid;
-}
-.social-icons {
-  display: flex;
-  height: 0vh;
-  overflow: hidden;
-}
-
-.show-icons {
-  height: 10vh;
-  align-items: center;
-  border-top: 2px solid black;
-  overflow: visible;
-}
-.social-icons li {
-  margin: auto;
-
-  font-size: 1.5rem;
-  transition: all 0.5s linear;
-}
-
-.social-icons li a {
-  padding: 0.4em;
-  color: black;
-  transition: all 0.5s ease;
-  border-radius: 50%;
-}
-
-.social-icons li a:hover {
-  background: black;
-  color: white;
-}
-
-.nav-toggle {
-  font-size: 1.5rem;
-  color: black;
-  background: transparent;
-  border-color: transparent;
-  transition: 1s all linear;
-  cursor: pointer;
-  justify-self: flex-end;
-  outline: none;
-}
-.nav-toggle:hover {
-  color: black;
-  transform: rotate(90deg);
-  outline: none;
-}
-
-@media screen and (min-width: 800px) {
-  .nav-toggle {
-    display: none;
-  }
-
-  .nav-header {
-    display: block;
-  }
-
-  .links {
-    flex-direction: row;
-    height: auto;
-    display: flex;
-  }
-  .links li {
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding: 1em 1em;
-    margin: auto;
-  }
-  .social-icons {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    border: none;
-    padding:1em;
-  }
-
-  .social-icons li {
-    margin: auto;
-
-    font-size: 1.2rem;
-  }
-
-  .nav-center {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  footer {
-    display: none;
-  }
-}
 </style>
 </head>
 <body>
@@ -258,18 +74,22 @@ a {
   </div>
 </nav>
 <div class="card">
+  <div class="image">
   <img src="resource/Lovendino/joan.jpg" style="width:100%">
-  <a href = "joan_index.html"><button class ="pat"><b><u><h4>Click Here</h4>Joan Lovendino</u></b></button></a>
+</div>
+  <a href = "joan_index.html"><button class ="pat"><b>Joan Lovendino</b>
+    <h2>Get to know me more</h2></button></a><br><br>
+
   <p class="title">BSIS-I201</p>
-  <p>City College of Angeles</p>
-<p>Manibaug Pasig Balik Barangay Porac Pampanga</p>
+  <p>City College of Angeles</p><br>
+<p>Manibaug Pasig Balik</p><p> Barangay Porac Pampanga</p>
+<br><p><b>Contact</b></p>
 <p>(+63)9169789435</p>
   <div style="margin: 24px 0;"> 
     <a href="https://mobile.twitter.com/ilahzamora?fbclid=IwAR0UjyHruKz-t20cCIzTr-Q2BESKGEmIJPjZhLea5l51vBe3QhJn7sUcAbk"><i class="fab fa-twitter"></i></a>    
     <a href="https://www.facebook.com/jamespaul.esguerra.5"><i class="fab fa-facebook"></i></a> 
     <a href="https://www.instagram.com/joanlovendino/?hl=en"><i class="fab fa-instagram"></i></a> 
   </div>
-  <p><button>Contact</button></p>
 </div>
 <embed name="lostmojo" src="resource/Music/music2.mp3" loop="true" autostart="true" style="visibility:hidden;"/>
 </body>

@@ -4,7 +4,6 @@ html{
     color:#fff;
   }
   body{
-    background-image:url(/resource/Zamora/backgroundilah.png);
     background-size: 100%;
     margin: 0%;
     position: fixed;
@@ -14,27 +13,43 @@ html{
   }
   .card {
     position: relative;
-    box-shadow: 0 8px 24px 0 red;
     max-width: 300px;
-    margin: 4% 0% 0% 10%;
+    height:590px;
+    margin: 2% auto auto 10%;
     text-align: center;
     float: left;
     font-family: arial;
     font-size: 15px;
   }
-  
+  .card p{
+    color: white;
+    font-size: 15px;
+    line-height: 5px;
+  }
+  .card br{
+    line-height: 1px;
+  }.card h2{
+    margin-top: 1px;
+    font-size: x-small;
+  }
+  .image{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+  }
   .title {
     color: white;
-    font-size: 18px;
+    font-size: 15px;
   }
   
   button {
     border: none;
     outline: 0;
+    height: 50px;
+    margin-bottom: 15px;
     display: inline-block;
     padding: 8px;
     color:black;
-    background-color: cyan;
     text-align: center;
     cursor: pointer;
     width: 100%;
