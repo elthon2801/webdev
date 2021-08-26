@@ -36,7 +36,7 @@
 	
 		if(isset($_POST["mail"])){
 			$emails = array('nelsonjanperez@cca.edu.ph', 'ejcayetano@cca.edu.ph', 'bogalang@cca.edu.ph', 'jppasohil@cca.edu.ph', 'csjgonzales@cca.edu.ph', 'izamora@cca.edu.ph', 'jlovendino@cca.edu.ph');
-			$names = array('Mr. Nelsonjan Perez', 'Elthon Jon Cayetano', 'Brian Oniel Galang', 'John Patrick Pasohil', 'Carlos Steven julian Gonzales', 'Ilah Zamora', 'Joan Lovendino');
+			$names = array('Mr. Nelsonjan Perez', 'ElthonCutie Jon Cayetano', 'Brian Oniel Galang', 'John Patrick Pasohil', 'Carlos Steven julian Gonzales', 'Ilah Zamora', 'Joan Lovendino');
 			$photos = array('resource/Site/sir.jpg', 'resource/Cayetano/buladas.png','resource/Galang/briann.png','resource/Pasohil/patrick.png','resource/Gonzales/carlos.png','resource/Zamora/ilahhhhh.png','resource/Lovendino/joana.png');
 			$message = null;
 			$name = null;
