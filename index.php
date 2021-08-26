@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title>
-			Web2
+			Web 2.0
 		</title>
 		<link rel="stylesheet" href="styles/index.css">
 	</head>
