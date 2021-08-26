@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title>
-			Web2
+			Web 2.0
 		</title>
 		<link rel="stylesheet" href="styles/index.css">
 	</head>
@@ -13,7 +13,7 @@
 		<div class="words">
 			<div class="head">
 				<h1>Welcome to our team!</h1>
-				<h2>(Come on, know us better!)</h2>
+				<h2>Come on, know us better!</h2>
 			</div>
 
 		<!--			Login/Signup			-->
