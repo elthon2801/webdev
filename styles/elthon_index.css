@@ -1,522 +1,154 @@
+body{
+	width: 100%;
+	margin: 0%;
+	background-color: gray;
+	color: white;
+	overflow-x: hidden;
+}::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: black; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 10px;
+}
 
-
-html, body, div, h1, h2, h3, p, pre {
-	margin: 0;
-	padding: 0;
-}
-html, body {
-	background: white;
-}
-a {
-	text-decoration: underline;
-	color: #1889e6;
-}
-a:hover {
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}li{
 	text-decoration: none;
-}
-.bg {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-.page {
-	position:relative;
-	width: 100%;
-	margin-top:1%;
-	border-bottom-right-radius: 100%;
-}
-.pcss3t {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: none;
-	font-size: 0;
-	text-align: left;
-}
-.pcss3t > input {
-	position: absolute;
-	left: -9999px;
-}
-.pcss3t > label {
-	position: relative;
-	display: inline-block;
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: none;
-	cursor: pointer;
-	transition: all 0.1s;
-	-o-transition: all 0.1s;	
-	-ms-transition: all 0.1s;	
-	-moz-transition: all 0.1s;	
-	-webkit-transition: all 0.1s;
-}
-.pcss3t > label i {
-	display: block;
-	float: left;
-	margin: 16px 8px 0 -2px;
-	padding: 0;
-	border: 0;
-	outline: none;
-	font-family: FontAwesome;
-	font-style: normal;
-	font-size: 17px;
-}
-.pcss3t > input:checked + label {
-	cursor: default;
-}
-.pcss3t > ul {
-	list-style: none;
-	position: relative;
-	display: block;
-	overflow: hidden;
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: none;
-	font-size: 13px;
-}
-.pcss3t > ul > li {
-	position: absolute;
-	width: 100%;
-	overflow: auto;
+	list-style-type: none ;
+}.menu{
+	margin: 0%;
 	padding: 0%;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	opacity: 0;
-	transition: all 0.5s;
-	-o-transition: all 0.5s;	
-	-ms-transition: all 0.5s;	
-	-moz-transition: all 0.5s;	
-	-webkit-transition: all 0.5s;
-}
-.pcss3t > .tab-content-first:checked ~ ul .tab-content-first,
-.pcss3t > .tab-content-2:checked ~ ul .tab-content-2,
-.pcss3t > .tab-content-3:checked ~ ul .tab-content-3,
-.pcss3t > .tab-content-4:checked ~ ul .tab-content-4,
-.pcss3t > .tab-content-5:checked ~ ul .tab-content-5,
-.pcss3t > .tab-content-6:checked ~ ul .tab-content-6,
-.pcss3t > .tab-content-7:checked ~ ul .tab-content-7,
-.pcss3t > .tab-content-8:checked ~ ul .tab-content-8,
-.pcss3t > .tab-content-9:checked ~ ul .tab-content-9,
-.pcss3t > .tab-content-last:checked ~ ul .tab-content-last {
-	z-index: 1;
-	top: 0;
-	left: 0;
-	opacity: 1;
-	-webkit-transform: scale(1,1);
-	-webkit-transform: rotate(0deg);
-}
-
-.pcss3t-height-auto > ul {
-	height: auto !important;
-}
-.pcss3t-height-auto > ul > li {
-	position: static;
-	display: none;
-	height: auto !important;
-}
-.pcss3t-height-auto > .tab-content-first:checked ~ ul .tab-content-first,
-.pcss3t-height-auto > .tab-content-2:checked ~ ul .tab-content-2,
-.pcss3t-height-auto > .tab-content-3:checked ~ ul .tab-content-3,
-.pcss3t-height-auto > .tab-content-4:checked ~ ul .tab-content-4,
-.pcss3t-height-auto > .tab-content-5:checked ~ ul .tab-content-5,
-.pcss3t-height-auto > .tab-content-last:checked ~ ul .tab-content-last {
-	display: block;
-}
-
-.pcss3t-steps > label {
-	cursor: default;
-}
-
-.pcss3t-effect-scale > ul > li {
-	-webkit-transform: scale(0.1,0.1);
-}
-.pcss3t-effect-rotate  > ul > li {
-	-webkit-transform: rotate(180deg);
-}
-.pcss3t-effect-slide-top > ul > li {
-	top: -40px;
-}
-.pcss3t-effect-slide-right > ul > li {
-	left: 80px;
-}
-.pcss3t-effect-slide-bottom > ul > li {
-	top: 40px;
-}
-.pcss3t-effect-slide-left > ul > li {
-	left: -80px;
-}
-
-.pcss3t-layout-top-right {
-	text-align: right;
-}
-
-.pcss3t-layout-top-center {
-	text-align: center;
-}
-
-.pcss3t > .right {
-	float: right;
-}
-
-@media screen and (max-width: 980px) {
-	
-}
-
-@media screen and (max-width: 767px) {
-	.pcss3t > label {
-		display: block;
-	}
-	.pcss3t > .right {
-		float: none;
-	}
-}
-
-.pcss3t > label {	
-	padding: 0 20px;
-	background: #e5e5e5;
-	font-size: 13px;
-	line-height: 49px;
-}
-.pcss3t > label:hover {
-	background: #f2f2f2;
-}
-.pcss3t > input:checked + label {
-	background: #fff;
-}
-.pcss3t > ul {
-	background: #fff;
-	text-align: left;
-}
-.pcss3t-steps > label:hover {
-	background: #e5e5e5;	
-}
-
-.pcss3t-theme-1 > label {
-	margin: 0 5px 5px 0;
-	border-radius: 5px;
-	background:grey;
-	box-shadow: 0 2px rgba(0,0,0,0.2);
-	color: black;
-	opacity: 100;
-	font-family:sans-serif;
-
-}
-.pcss3t-theme-1 > label:hover {
-	background:cyan;
-	opacity: 1;
-	font-family:sans-serif;
-
-}
-.pcss3t-theme-1 > input:checked + label {
-	margin-bottom: 0;
-	padding-bottom: 5px;
-	border-bottom-right-radius: 0;
-	border-bottom-left-radius: 0;
-	color:black;
-	opacity: 1;
-	background: cyan;
-	font-family:sans-serif;
-}
-.pcss3t-theme-1 > ul {
-	border-radius: 5px;
-	box-shadow: 0 3px rgba(0,0,0,0.2);
-}
-.pcss3t-theme-1 > .tab-content-first:checked ~ ul {
-	border-top-left-radius: 0;
-}
-@media screen and (max-width: 767px) {
-	.pcss3t-theme-1 > label {
-		margin-right: 0;
-	}
-	.pcss3t-theme-1 > input:checked + label {
-		margin-bottom: 5px;
-		padding-bottom: 0;
-		border-radius: 5px;
-	}
-	.pcss3t-theme-1 > .tab-content-first:checked ~ ul {
-		border-top-left-radius: 5px;
-	}
-}
-.pcss3t > ul,
-.pcss3t > ul > li {
-	height: 720px;
-	border-bottom-right-radius: 0%;
-	border-top-right-radius: 0% ;
-	background-color: black;
-}
-.wala{
-	padding: 8% 8%;
-	background-color:white;
-	margin: 3% ;
-	position: relative;
-	height: 57.4%;
-	border-radius: 100%;
-	width: 33%;
-}
-  .tablink {
-	background-color:gainsboro;
-	color: black;
-	float: left;
-	border:none;
-	outline: none;
-	cursor: pointer;
-	padding: 14px 14px;
-	font-size: 17px;
-	width: 20%;
-}
-  .tablink:hover {
-	background-color:gray;
-	color: black;
-}
-  .tabcontent {
-	color: black;
-	display: none;
-	padding:  0%;
-	height: 100%;
-}
-  	#Home {background-color: black; }
-  	#Home h3{
-	   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-weight: lighter; margin-left: 5%; margin-top: 5%;
-}
-  	#Home h4{
-	 font-family:Arial, Helvetica, sans-serif; font-weight: lighter; margin-left: 5%; margin-top: 0%;
-}
-  	#News h3{
-		font-size: 200%; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-weight: lighter; margin-left: 5%; margin-top: 5%;
-}
-	#News h4{
-  	font-size: 150%; font-family:Arial, Helvetica, sans-serif; font-weight: lighter; margin-left: 5%; margin-top: 0%;
-}
-	#Contact h3{
-		font-size: 200%; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-weight: lighter; margin-left: 5%; margin-top: 5%;
-}
-	#Contact h4{
-  	font-size: 150%; font-family:Arial, Helvetica, sans-serif; font-weight: lighter; margin-left: 5%; margin-top: 0%;
-}
-	#About h3{
-		font-size: 200%; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-weight: lighter; margin-left: 0%; margin-top: 5%;
-}
-	#About h4{
-  	font-size: 150%; font-family:Arial, Helvetica, sans-serif; font-weight: lighter; margin-left: 0%; margin-top: 0%;
-}
-	#About h5{
-		font-size: 120%; font-family:Arial, Helvetica, sans-serif; font-weight:bold; margin-left: 0%; margin-top: -1.5%;
-}
-	#Orgma h3{
-		font-size: 200%; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-weight: lighter; margin-left: 5%; margin-top: 5%;
-}
-	#Orgma h4{
-  	font-size: 150%; font-family:Arial, Helvetica, sans-serif; font-weight: lighter; margin-left: 5%; margin-top: 0%;
-}
-  	.award {
-		  position: relative;
-		  float: left;
-	  width:65%;
-	  height: 1000%;
-	  background-color: black;
-	  color: white;
-}
-	.awardes {
-	position: relative;
-	float: left;
-	width:65%;
-	height: 1550%;
-	background-color: black;
-	color: white;
-}
-	.awarde {
-	position: relative;
-	float: left;
-	width:100%;
-	height: 99.4%;
-	background-color: black;
-	color: white;
-}
-	.award2 {
-	padding-top: 5%;
-	width:35%;
-	position: relative;
-	float: right;
-	height: 988.5%;
-	background-color: black;
-	color: white;
-}
-	.award23 {
-	padding-top: 5%;
-	width:35%;
-	position: relative;
-	float: right;
-	height: 1538.5%;
-	background-color: black;
-	color: white;
-}
-	.award h3{
-	font-size: 300%;
-}	
-	.award h4{
-	font-size: 130%;
-}
-	.awardes h3{
-	font-size: 300%;
-}	
-	.awardes h4{
-	font-size: 130%;
-}	
-	.awardi {
-	margin-top: 5%;
-	width:100%;
-	position: relative;
-	float: left;
-	height:95%;
-	color: white;
-	background-color: black;
-}
-  	.def{
-	width: 70%;
-	position: relative;
-	float: left;
-	background-color: black;
-	color: white;
-	height: 224.1%;
-}
-  	.pic{
-	margin: 3% 5% 3% -10%;
+}.menu button{
+	width: 100px;
+}.page{
 	width: 100%;
-}
-  	.picsi{
-	margin:0%;
-	width:30%;
-	float: right;
-	background-color: black;
-}
-	.picsi img{
-	margin: 3% 10%;
-	width: 80%;
-}
-	#News {background-color: black;}
-	#Contact {background-color: black;}
-	#About {background-color:black; width: 90%; height: 1150%; padding: 0% 5%;}
-	#Orgma{background-color: black; width: 100%; height: 2000%; margin-bottom: 0%;
-}
-  	.certs{
-	  margin: 2% 5%;
-	  width: 80%;
-}
-  	.certsi{
-	margin: 0% .5%;
-	width:32%;
-	position: relative;
-	float: inline;
-}
-  	#buladas{
-	position: relative;
-	z-index: 1;
-	width: 45%;
-	float: right;
-	margin-top: 0%;
+	margin: 0%;
 	padding: 0%;
-}
-	.level {
-	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 300%;
-	font-weight: 100;
-	color: white;
-	text-align: center;
-	margin: 2% 0% 2% -1%;
-	border: 5px solid white;
-	width:40%;
-}
-	.school{
-	font-family:sans-serif;
-	font-size: 250%;
-	color: white;
-	text-align: center;
-	margin-bottom:2%;
-	margin-top: 5%
-}
-	.info1 {
-	font-family:'Times New Roman', Times, serif;
-	font-size: 150%;
-	color: white;
-	text-align: center;
-	line-height: 1em;
-	margin: 0% 0% 5% 0%;
-
-}
-	.logo{
-	float: left;
-	width: 18%;
-	margin-left: 10%;
-}
-	.card {
-	position: relative;
-	width: 100%;
-	margin-top: -1%;
-	text-align: center;
-	float: left;
-	font-family: arial;
-	font-size: 30px;
-	background: black;
-	color: white;
-}
-	.title {
-	color: white;
-	font-size: 18px;
-}
-  	button {
 	border: none;
-	outline: 0;
-	display: inline-block;
-	padding: 8px;
-	color:black;
-	background-color: cyan;
-	text-align: center;
-	cursor: pointer;
+}.page li{
+	margin: 0%;
+	padding: 0%;
+}.page .tab1_home, .tab2_educ, .tab3_achieve{
 	width: 100%;
-	font-size: 18px;
-}
-  
-	.goyu a {
-	text-decoration: none;
-	font-size: px;
-	color: white;
-}
-  
-  	button:hover, a:hover {
-	opacity: 0.7;
-}
-  	#buton{
-	  margin:1% 1%;
-	  width:5%;
-	  position: fixed;
-	  float: left;
-	  color: white;
-	  z-index: 2;
-	  background-color: black;
-	  box-shadow: 0px 8px 8px 0px red;
-}
-  .navi{
-	display: inline-block;
-}
-  .cap{
-	  font-size: 60%;
-	  text-align:justify center;
-}
-  .menu a{
-	  font-family:calibri; 
-	  border: gray 2px solid; 
-	  text-decoration: black;
-	  color: black; 
-	  padding: .5%; 
-	  font-size: 120%; 
-	  border-radius: 5%; 
-	  float: right; 
-	  margin-right: 2%; 
-	 background-color: cyan;
-	 position: relative;
-	 z-index: 3; 
-}
+	margin: 0;
+	padding: 0;
+	border: none;
+}.tab1_home{
+	width: 100%;
+	margin: 0%;
+	display: block;
+}.header{
+	width: 100%;
+	height: 750px;
+	margin: 0% 0% 1% 0%;
+	padding: 0%;
+	display: block;
+	position: relative;
+	background-color: black;
+	overflow-y: hidden;
+}#header_image{
+	width: 50%;
+	margin: 0% 0% 0% 50%;
+	position: absolute;
+}.wala{
+	width: 44%;
+	height: 900px;
+	margin: 0% 50% 0% 0%;
+	padding: 0% 3%;
+	float: left;
+	position: absolute;
+	background-color: none;
+}.wala h1{
+	transform: translate(+5%, +4%);
+	font-size: 100px;
+	text-align: left;
+	line-height: 100px;
+}.card{
+	width: 100%;
+	margin: 0;
+	height: 520px;
+	display: block;
+	background-color: black;
+}.card_image{
+	width: 30%;
+	height: 400px;
+	margin: 3% 60% auto 10%;
+	position: absolute;
+	border: 1px solid black;
+}.card_image img{
+	width: 95%;
+	height: 100%;
+	margin: 0% 0%;
+	transform: translate(0%, 0%);
+	border-radius: 50%;
+	border: 5px solid red;
+}.socmed{
+	width: 50%;
+	height: 30px;
+	position: absolute;
+	margin: 3% 10% 0% 40%;
+	border: 1px solid black;
+}.socmed a:last-child{
+	margin-right: 55%;
+}.socmed a{
+	margin: 0 5px;
+	font-size: 30px;
+	color: red;
+}.card_text{
+	width: 50%;
+	height: inherit;
+	margin: 0 10% 0 40%;
+	padding: 3% 0% 0% 0%;
+	position: absolute;
+	text-align: center;
+}.card_text h1{
+	font-size: 40px;
+}.quote{
+	width: 80%;
+	height: 330px;
+	margin: 0%;
+	padding: 1.5% 10%;
+	display: block;
+	background-color: black;
+}.quote h1{
+	font-size: 50px;
+}.quote h3{
+	font-size: 30px;
+}.gallery{
+	width: 100%;
+	height: 500px;
+	margin: 0%;
+	padding: 2% 0%;
+	background-color: black;
+}.video{
+	width: 720px;
+	height: 360px;
+	float: right;
+	margin: 2% 10% 2% 0%;
+	border: 1px black solid;
+}.def{
+	width: 80%;
+	padding: 2% 10%;
+	text-align: center;
+	background-color: black;
+}.def .level{
+	font-size: 45px;
+}.def .logo{
+	height: 400px;
+}.def .school{
+	font-size: 60px;
+	transform: translateY(-50%);
+}.def .info1{
+	font-size: 25px;
+	margin-top: -5%;
+}.def .picsi{
+	height: 400px}
