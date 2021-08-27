@@ -157,20 +157,26 @@ body{
 	height: 4000px;
 	border: 1px solid black;
 	display: block;
-}.blockade .certificate{
-	width: 45%;
-	margin: 2.5%;
-}.blockade .carousel{
-	width: 45%;
-	margin: 2.5%;
+}.awardes .pic{
+	height: 200px;
 }.awardes .certs{
 	height: 400px;
-}.carousel{
-	width: 50%;
-	margin: 5px;
+}.awardes .blockade{
+	width: 100%;
+	display: block;
+	margin: 0%;
+}.blockade .certificate{
+	width: 40%;
+	margin: 5px 60% 0% 0%;
 	position: absolute;
-}.carousel img{
-	height: 400px;
+}.blockade .carousel{
+	width: 60%;
+	margin: 0% 0% 0% 40%;
+	position: absolute;
+}.carousel_image{
+	height: 20px;
+}.active {
+	background-color: #717171;
 }.fade {
 	-webkit-animation-name: fade;
 	-webkit-animation-duration: 1.5s;
